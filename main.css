@@ -9,10 +9,12 @@ header {
     background-image: url('/images/bannerhabbo2.png');
     background-size: auto;
     border: 1px groove #000000;
+    border-radius: 10px;
     box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.500);
 }
 
 section {
+    border-radius: 10px;
     background-image: url('/images/grasshabbopreencher.gif');
     border: 2px solid #000000;
     box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.500);
@@ -24,6 +26,12 @@ section .container {
     align-items: center;
     justify-content: space-between;
 }
+
+section .container {
+        align-items: flex-start;
+        justify-content: center;
+}
+
 
 h1 {
     display: inline-flex;
@@ -46,8 +54,69 @@ header nav li a {
 body {
     font-family: 'Volter', 'Ubuntu Condensed', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 16px;
-    color: beige;
+    color: rgb(255, 255, 255); 
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;
     background-image: url('images/nightbackground.png');
+}
+
+.aleatory-images img {
+    height: normal;
+    margin-right: 8px;
+}
+
+.aleatory-images li {
+    display: inline;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+form button {
+    background-color: #0000008f;
+    color: #eeeeee;
+    border: none;
+    cursor: pointer;
+}
+
+.social-links img {
+    height: 64px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+form button:hover {
+    background-color: #ffc400fd;
+    color: #000000;
+}
+
+input:focus, textarea:focus {
+    outline-color: #ffe600fd;
 }
 
 @font-face {
@@ -57,13 +126,15 @@ body {
     font-style: normal;
 }
 
-
-
 footer {
-    background-image: url('images/bannerhabbocortado.png');
+    background-image: url('images/habbotijolo.gif');
+    border-radius: 10px;
     background-size: auto;
-    color: rgb(255, 255, 255); 
-    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;
-    color: #eeeeee;
     padding: 16px;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.500);
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
 }
